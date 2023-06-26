@@ -1,30 +1,12 @@
 import female from '../assets/images/femaleProfile.jpeg'
 import male from '../assets/images/maleProfile.jpeg'
 import { useAppContext } from "../AppContext/AppContext"
-import { AppContextInterface } from "../AppContext/AppContextInterface"
+import { IAppContext } from "../Interface/AppContextInterface"
 
 const Employee = () => {
-    const { employees, handleEmployeeCardClick, handleSelectTeam, selectedTeam } = useAppContext() as unknown as AppContextInterface;
+    const { employees, handleEmployeeCardClick, selectedTeam } = useAppContext() as unknown as IAppContext;
   return (
     <div className='container'>
-        <div className='row justify-content-center mt-3 mb-3'>
-            <div className='col-6'>
-                <select value={selectedTeam} onChange={handleSelectTeam} className='form-select form-select-lg'>
-                    <option value='TeamA'>
-                        TeamA
-                    </option>
-                    <option value='TeamB'>
-                        TeamB
-                    </option>
-                    <option value='TeamC'>
-                        TeamC
-                    </option>
-                    <option value='TeamD'>
-                        TeamD
-                    </option>
-                </select>
-            </div>
-        </div>
         <div className='row justify-content-center mt-5 mb-5'>
             <div className='col-8'>
                 <div className='card-collection'>

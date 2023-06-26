@@ -21,6 +21,20 @@ body::-webkit-scrollbar {
     display: none !important;
     overflow: hidden;
 }
+.navbar-nav .nav-link {
+    color: white;
+}
+.items-center {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+}
+hr {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
 
 @media only screen and (max-width:736px) {
     .card-collection {

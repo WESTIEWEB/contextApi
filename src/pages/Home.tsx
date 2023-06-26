@@ -1,14 +1,13 @@
-import Employee from '../components/employee'
-import Footer from '../components/footer'
-import Header from '../components/header'
-const home = () => {
+import Employee from '../components/employee';
+import Header from '../components/header';
+
+const Home = () => {
   return (
-    <div>
+    <>
       <Header />
       <Employee />
-      <Footer />
-    </div>
+    </>
   )
 }
 
-export default home
+export default Home
