@@ -38,6 +38,7 @@ const AppProvider = ({ children }: IProps) => {
     }
     // console.log(teams, 'teams')
 
+    // Grouping employees by team
     const GroupTeamMembers = () => {
         const team: any [] = [];
        
